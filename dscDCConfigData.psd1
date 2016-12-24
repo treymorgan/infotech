@@ -1,15 +1,9 @@
-#
-# dscDCConfigData.psd1
-#
-
-# Configuration Data for AD  
+# Configure all of the settings we want to apply for this configuration
 @{
     AllNodes = @(
         @{
-            NodeName="*"
-            RetryCount = 20
-            RetryIntervalSec = 30
-            PSDscAllowPlainTextPassword=$true
+            NodeName = '*'
+            PSDscAllowPlainTextPassword = $true
             PSDscAllowDomainUser = $true
         },
         @{ 
